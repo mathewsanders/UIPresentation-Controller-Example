@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <scenes>
+        <!--Source Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SourceController" customModule="PresentationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsc-NH-MB9">
+                                <rect key="frame" x="168" y="607" width="38" height="30"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <segue destination="SJg-dE-3fE" kind="presentation" id="Mph-xV-1at"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tsc-NH-MB9" secondAttribute="bottom" constant="30" id="Qer-fR-yDW"/>
+                            <constraint firstItem="Tsc-NH-MB9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s5M-Ff-D4K"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303.5" y="389.5"/>
+        </scene>
+        <!--Destination Controller-->
+        <scene sceneID="OdE-ax-yjf">
+            <objects>
+                <viewController id="SJg-dE-3fE" customClass="DestinationController" customModule="PresentationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fhf-bB-zRX"/>
+                        <viewControllerLayoutGuide type="bottom" id="hEt-PD-qD2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lnc-Nv-hHq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-lI-h3C">
+                                <rect key="frame" x="171" y="607" width="32" height="30"/>
+                                <state key="normal" title="Hide"/>
+                                <connections>
+                                    <segue destination="WzR-HV-gFs" kind="unwind" unwindAction="cancel:" id="UE2-GG-lvg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vz3-lI-h3C" firstAttribute="centerX" secondItem="Lnc-Nv-hHq" secondAttribute="centerX" id="1hW-BY-pS6"/>
+                            <constraint firstItem="hEt-PD-qD2" firstAttribute="top" secondItem="Vz3-lI-h3C" secondAttribute="bottom" constant="30" id="td4-FS-yYI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxK-41-bKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="WzR-HV-gFs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="789.5" y="389.5"/>
+        </scene>
+    </scenes>
+</document>
